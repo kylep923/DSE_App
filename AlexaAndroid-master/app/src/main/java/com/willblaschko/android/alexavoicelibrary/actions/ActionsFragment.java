@@ -65,6 +65,23 @@ public class ActionsFragment extends BaseListenerFragment {
                     }
                 }));
 
+        items.add(new ActionFragmentAdapter.ActionFragmentItem(getString(R.string.fragment_action_send_prerecorded),
+                android.R.drawable.ic_menu_compass,
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        loadFragment(new SendPrerecordedActionFragment());
+                    }
+                }));
+        items.add(new ActionFragmentAdapter.ActionFragmentItem(getString(R.string.fragment_action_send_text),
+                android.R.drawable.ic_menu_edit,
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        loadFragment(new SendTextActionFragment());
+                    }
+                }));
+
         return items;
     }
 
