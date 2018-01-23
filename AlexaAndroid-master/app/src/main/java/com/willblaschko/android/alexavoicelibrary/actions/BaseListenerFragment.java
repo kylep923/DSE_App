@@ -55,17 +55,6 @@ public abstract class BaseListenerFragment extends Fragment {
 
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.view_code:
-                DisplayCodeFragment fragment = DisplayCodeFragment.getInstance(getTitle(), getRawCode());
-                loadFragment(fragment);
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     public abstract void startListening();
     protected abstract String getTitle();
     @RawRes
