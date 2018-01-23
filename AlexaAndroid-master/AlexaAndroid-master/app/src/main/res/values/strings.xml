@@ -12,5 +12,8 @@
     <string name="action_send_prerecorded_description">Press the the button to send request.\n\n\nSending prerecorded audio will be the fastest way to connect to the Alexa servers, but it\'s also the least flexible. It takes a raw audio file and uploads it directly without any other user interaction. This example plays the recorded value: "Tell me a joke."\n\n\n Click the menu option to view sample code.</string>
     <string name="action_send_audio_description">Press the microphone to start recording. Recording will end either when pressed again or end of speech detected.\n\n\nSending audio can be very efficient if using the DataRequestBody option, since it can write to the POST while the audio is still being recorded, giving the impression of a very fast response. This can also be used to prepend or append audio to a recorded stream, if you wanted to limit the control to a single skill: "Open Hey Dad and ask for a joke about…" followed by the joke type.\n\n\n Click the menu option to view sample code.</string>
 
+    <string name="fragment_quote"><b><i>\"Revel Digital is a next generation platform for digital signage and media distribution.\" - Someone</i></b></string>
+    <string name="fragment_instructions"><b>Tap Revel Logo to activate Amazon Alexa!</b></string>
+
 
 </resources>
