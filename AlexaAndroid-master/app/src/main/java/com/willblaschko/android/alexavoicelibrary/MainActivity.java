@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.TextView;
 
-import com.willblaschko.android.alexavoicelibrary.actions.ActionsFragment;
+import com.willblaschko.android.alexavoicelibrary.actions.SendAudioActionFragment;
 import com.willblaschko.android.alexavoicelibrary.actions.BaseListenerFragment;
 
 import static com.willblaschko.android.alexavoicelibrary.R.id.frame;
@@ -16,7 +16,7 @@ import static com.willblaschko.android.alexavoicelibrary.R.id.frame;
 /**
  * Our main launch activity where we can change settings, see about, etc.
  */
-public class MainActivity extends BaseActivity implements ActionsFragment.ActionFragmentInterface, FragmentManager.OnBackStackChangedListener {
+public class MainActivity extends BaseActivity implements SendAudioActionFragment.ActionFragmentInterface, FragmentManager.OnBackStackChangedListener {
     private final static String TAG = "MainActivity";
     private final static String TAG_FRAGMENT = "CurrentFragment";
 
@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity implements ActionsFragment.Action
         status = (TextView) findViewById(R.id.status);
         loading = findViewById(R.id.loading);
 
-        ActionsFragment fragment = new ActionsFragment();
+        SendAudioActionFragment fragment = new SendAudioActionFragment();
         loadFragment(fragment, false);
     }
 

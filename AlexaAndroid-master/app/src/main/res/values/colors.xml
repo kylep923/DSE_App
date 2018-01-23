@@ -6,4 +6,6 @@
     <color name="white">#ffffff</color>
     <color name="grey">#aaffffff</color>
     <color name="black">#000000</color>
+
+    <color name="revelBlue">#347eff</color>
 </resources>

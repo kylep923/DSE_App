@@ -19,7 +19,7 @@ public class RecorderView extends View {
 
     private static final int ROTATION_SPEED = 1;
 
-    public static final int COLOR_INDICATOR_DEFAULT = 0xff3F51B5;
+    public static final int COLOR_INDICATOR_DEFAULT = 0xffcc0000;
     public static final int COLOR_INDICATOR_GONE = 0x00000000;
 
     private float rmsdbLevel = 0;
@@ -65,7 +65,7 @@ public class RecorderView extends View {
         height = MeasureSpec.getSize(heightMeasureSpec);
         min = Math.min(width, height);
 
-        imageSize = (int) (min * .45);
+        imageSize = (int) (min * .75);
         setRmsdbLevel(1);
     }
 
